@@ -5,7 +5,14 @@ const pets = ["cat", "dog", "bat"];
 
 function checkName(petName) {
   // logic here
+  if (pets.includes(petName)) {
+    return `the ${petName} is in the list`;
+  } else {
+    return `the ${petName} is not in the list`;
+  }
 }
+console.log(checkName("cat"));
+console.log(checkName("pig"));
 
 checkName("cat");
 // expected outcome: "the cat is in the list"
@@ -19,7 +26,14 @@ const array = [1, 2, 3, 4, 5];
 
 function checkNumber(number) {
   // logic here
+  if (array.includes(number % 2 === 0)) {
+    return `the ${number} is a even number`;
+  } else {
+    return `the ${number} is a odd number`;
+  }
 }
+console.log(checkNumber(3));
+console.log(checkNumber(4));
 
 checkNumber(3);
 // expected outcome: "the number 3 is a odd number"

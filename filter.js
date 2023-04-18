@@ -9,3 +9,21 @@ const number = [25, 45, 55, 77, 88, 99];
 // Using filter() to return new array that contains even number
 
 // Using filter() to return new array that contains odd number
+
+// Exercise 1
+// Return a new array contains number bigger than 0
+const newResult = numberList.filter((number) => number > 0);
+console.log(newResult);
+
+// Return a new array contains number less than 10
+const newArreyResult = numberList.filter((number) => number < 10);
+console.log(newArreyResult);
+
+// Exercise 2
+// Using filter() to return new array that contains even number
+const evenNumber = number.filter((num) => num % 2 === 0);
+console.log(evenNumber);
+
+// Using filter() to return new array that contains odd number
+const oddNumber = number.filter((num) => num % 2 !== 0);
+console.log(oddNumber);
